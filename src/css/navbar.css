@@ -1,0 +1,32 @@
+.navbar
+{
+    width: 100vw;
+    background-color: #333;
+    padding: 0px;
+    margin: 0px;
+    position: absolute;
+    top:0;
+    left: 0;
+    text-align: right;
+    height: 38px;
+    grid-area: navbar;
+}
+
+.navbar ul li
+{
+    display: inline-block;
+    list-style: none;
+    padding:8px;
+}
+
+.navbar ul li a
+{
+    color: #FFF;
+    text-decoration: none;
+}
+
+.navbar ul .title
+{
+    position: absolute;
+    left: 16px;
+}

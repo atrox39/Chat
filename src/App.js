@@ -1,24 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Navbar from './components/navbar';
+import Message from './components/message';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="content">
+      <Navbar title="Chat" elements={
+        ['Login','Register','Info']
+        } />
+      <div className="main">
+        <Message datetime="2020-09-07 13:50:00">
+          Hola, como estas?
+        </Message>
+      </div>
     </div>
   );
 }
